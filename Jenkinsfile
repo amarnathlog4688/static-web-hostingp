@@ -12,14 +12,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'mvn clean install'
+                echo 'No build needed for static website'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                echo 'No tests for static website'
             }
         }
     }
